@@ -14,11 +14,10 @@ import {
 } from "firebase/firestore";
 
 // Shadcn UI components
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { toast } from "@/components/ui/use-toast";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Button } from "../components/ui/button";
+import { toast } from "../components/ui/use-toast";
 
 const Dashboard = () => {
   const navigate = useNavigate();

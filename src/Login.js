@@ -8,10 +8,10 @@ import {
 } from "firebase/auth";
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
-import { Input } from "../components/ui/input";
-import { Button } from "../components/ui/button";
-import { Card, CardContent } from "../components/ui/card";
-import { Label } from "../components/ui/label";
+import { Input } from "./components/ui/input";
+import { Button } from "./components/ui/button";
+import { Card, CardContent } from "./components/ui/card";
+import { Label } from "./components/ui/label";
 
 const Login = () => {
   const [email, setEmail] = useState("");

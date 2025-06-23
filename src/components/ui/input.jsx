@@ -1,12 +1,12 @@
 import * as React from "react";
 import { cn } from "../../lib/utils";
 
-const Button = React.forwardRef(({ className, ...props }, ref) => {
+const Input = React.forwardRef(({ className, ...props }, ref) => {
   return (
-    <button
+    <input
       ref={ref}
       className={cn(
-        "inline-flex items-center justify-center rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white hover:bg-green-700 transition",
+        "flex h-10 w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500",
         className
       )}
       {...props}
@@ -14,6 +14,6 @@ const Button = React.forwardRef(({ className, ...props }, ref) => {
   );
 });
 
-Button.displayName = "Button";
+Input.displayName = "Input";
 
-export { Button };
+export { Input };

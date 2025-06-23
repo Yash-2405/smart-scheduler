@@ -20,9 +20,10 @@ import {
   doc,
 } from "firebase/firestore";
 
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/ui/card";
-import { Button } from "./ui/ui/button";
-import { toast } from "./ui/ui/use-toast";
+import { Button } from "./components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "./components/ui/card";
+import { toast } from "./components/ui/use-toast";
+
 
 const localizer = momentLocalizer(moment);
 const DnDCalendar = withDragAndDrop(Calendar);
